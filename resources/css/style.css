@@ -1,0 +1,158 @@
+
+/* General page styling */
+html  {
+  font-size: 18px;
+  font-family: helvetica;
+  color: white;
+}
+
+/* (unfixed, logo with padding-left, justify left,
+display: block) */
+header {
+  display: flex;
+  height: 3.125rem;
+  background-color: black;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  width: 60%;
+
+}
+
+.logo img {
+  justify-content: center;
+  align-content: center;
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.logo h3 {
+  font-family: helvetica;
+  font-size: 1rem;
+}
+
+/* (background image with no-repeat, width 100%, and
+interior div with arrival notification) */
+.main-banner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+}
+
+.new-arrival {
+  position: relative;
+  background-color: black;
+  margin-left: 10%;
+  width: 20rem;
+  top: 9rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.new-arrival h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: helvetica;
+  padding-bottom: .25rem;
+}
+
+.new-arrival h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+/* (redbrick background, no-text decoration, an unordered
+ list flex container with "sapce-between", Nav list changes to menu only in tablet screen sizes
+ and disappears in mobile screen sizes) */
+nav {
+  background-color: firebrick;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: .75rem;
+}
+
+/* (add images of products with names underneath, in
+full screen products are flex centered, tablet flex "space-between" also
+tablet screen sizes reduce to just two products displayed, mobile screen
+sizes reduce to just one.) */
+.product-grid {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 3rem auto;
+}
+
+.exploding-pen,
+.cellular-watch,
+.thermal-glasses {
+  display: block;
+  border: 4px solid black;
+  width: 30%;
+  overflow: hidden;
+}
+
+.product-grid img {
+  height: 9rem;
+  max-width: 100%;
+  display: block;
+  margin: 2rem auto;
+}
+
+.product-grid h4 {
+  background-color: black;
+  text-align: center;
+  padding: .5rem;
+}
+/* (this is a flex container with "space-between" in both desktop and tablet
+sizes) */
+.location-hours {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.location,
+.hours {
+  width: 35%;
+}
+
+.location-hours h4 {
+  background-color: black;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.location-hours p {
+  color: black;
+  font-size: 1rem;
+}
+/* (footer aligns left in desktop and tablets. Mobile screens
+the text centers) */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 10rem;
+}
+
+footer h4 {
+  margin-left: 10%;
+}
